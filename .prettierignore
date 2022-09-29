@@ -1,0 +1,9 @@
+/* 
+!/e2e 
+!/projects 
+!/src 
+assets/ 
+/src/assets/.gitkeep
+browserslist 
+package*.json 
+*.ico
