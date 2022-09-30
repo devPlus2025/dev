@@ -12,12 +12,11 @@
     "eslint": "npx eslint \"src/**/*.{js,jsx,ts,tsx,html,css,scss}\" --quiet --fix",
     "cy:open": "npx cypress open"
   },
-  "husky": {   
-    "hooks": {  
-       "pre-commit": "npm run prettier"        
-     }   
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run prettier"
+    }
   },
-
   "private": true,
   "dependencies": {
     "@angular-eslint/template-parser": "14.1.2",
@@ -45,7 +44,7 @@
     "cypress": "10.9.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-prettier": "4.2.1",
-    "husky": "8.0.1",
+    "husky": "^4.3.8",
     "jasmine-core": "~3.10.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
