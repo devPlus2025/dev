@@ -14,10 +14,10 @@
   },
   "husky": {   
     "hooks": {  
-       "pre-commit": "npm run prettier:check"        
+       "pre-commit": "npm run prettier"        
      }   
   },
-  
+
   "private": true,
   "dependencies": {
     "@angular-eslint/template-parser": "14.1.2",
