@@ -1,6 +1,6 @@
 {
   "root": true,
-  "parser": "@typescript-eslint/parser",
+  "parser": "@angular-eslint/template-parser",
   "ignorePatterns": [
     "projects/**/*"
   ],
@@ -21,6 +21,7 @@
         "plugin:@angular-eslint/template/process-inline-templates"
       ],
       "rules": {
+        "no-console": 0,
         "@angular-eslint/component-selector": [
           "error",
           {
