@@ -21,7 +21,7 @@
         "plugin:@angular-eslint/template/process-inline-templates"
       ],
       "rules": {
-        "no-console": 0,
+        "no-console": 2,
         "@angular-eslint/component-selector": [
           "error",
           {
