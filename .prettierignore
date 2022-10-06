@@ -3,7 +3,7 @@
 !/projects 
 !/src 
 assets/ 
-/src/assets/.gitkeep
+src/assets/
 browserslist 
 package*.json 
 *.ico

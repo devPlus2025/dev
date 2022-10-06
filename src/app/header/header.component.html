@@ -1,16 +1,15 @@
-<mat-toolbar>
+<mat-toolbar color="primary">
     <mat-toolbar-row>
         <button mat-icon-button>
             <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
         </button>
-        <span>My App</span>
+        <h1></h1>
         <span class="spacer"></span>
         <div class="leftSideMenu">
             <button mat-button [matMenuTriggerFor]="afterMenu">
                 <mat-icon>settings</mat-icon>
             </button>
             <mat-menu #afterMenu="matMenu" xPosition="after">
-                <mat-icon class="user-image-icon ml-1">keyboard_arrow_down</mat-icon>
                 <button mat-menu-item>
                     <mat-icon>exit_to_app</mat-icon>
                     Logout
@@ -25,17 +24,11 @@
 </mat-toolbar>
 <mat-sidenav-container>
     <mat-sidenav #sidenav>
-        <mat-nav-list>
-            <a href="">home</a>
-            <a href="">home</a>
-            <a href="">home</a>
-            <a href="">home</a>
-            <a href="">home</a>
-        </mat-nav-list>
-        <mat-sidenav-content>
-            <div style="height: 88vh">
-                <router-outlet> </router-outlet>
-            </div>
-        </mat-sidenav-content>
+        <app-sidenav> </app-sidenav>
     </mat-sidenav>
+    <mat-sidenav-content>
+        <div style="height: 88vh; color: aqua">
+            <router-outlet></router-outlet>
+        </div>
+    </mat-sidenav-content>
 </mat-sidenav-container>
