@@ -1,0 +1,14 @@
+.form-group {
+    height: 45px;
+    white-space: nowrap;
+    label {
+        margin-bottom: 0rem;
+    }
+}
+
+hr.dashed {
+    display: flex;
+    border-top: 1.5px dashed rgb(137, 134, 134);
+    width: 75%;
+    margin-left: 0;
+}

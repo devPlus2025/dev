@@ -1,6 +1,6 @@
 import { createReducer, on } from '@ngrx/store';
+import { User } from 'src/app/common/user-modele/user.model';
 import { registerSucess } from './user-auth.actions';
-import { User } from '../../common/user-modele/user.model';
 
 export interface UserState {
     user: User | null;

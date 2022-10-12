@@ -11,5 +11,11 @@ export const registerRequest = createAction(
     RegisterActionTypes.SIGNUP_REQUEST,
     props<{ email: string; username: string; password: string }>(),
 );
-export const registerSucess = createAction(RegisterActionTypes.SIGNUP_SUCCESS, props<{ user: User }>());
-export const registerFailure = createAction(RegisterActionTypes.SIGNUP_FAILURE, props<{ error: any }>());
+export const registerSucess = createAction(
+    RegisterActionTypes.SIGNUP_SUCCESS,
+    props<{ user: User }>(),
+);
+export const registerFailure = createAction(
+    RegisterActionTypes.SIGNUP_FAILURE,
+    props<{ error: any }>(),
+);

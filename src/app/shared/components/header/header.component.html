@@ -1,0 +1,62 @@
+<div class="row">
+    <div class="col-md-2">Logo</div>
+    <div class="col">
+        <p-toolbar class="bg-transparent">
+            <div class="p-toolbar-group-left ml-0">
+                <div class="btn-group mr-2">
+                    <button
+                        type="button"
+                        class="btn btn-light dropdown-toggle"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                    >
+                        PORTFOLIO MGT
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <button
+                            class="dropdown-item"
+                            type="button"
+                            (click)="addItem($event)"
+                            *ngFor="let item of firstMenuItems"
+                        >
+                            {{ item }}
+                        </button>
+                    </div>
+                </div>
+                <div class="btn-group mr-2">
+                    <button
+                        type="button"
+                        class="btn btn-light dropdown-toggle"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                    >
+                        TOOLS
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <button
+                            class="dropdown-item"
+                            (click)="addItem($event)"
+                            type="button"
+                            *ngFor="let item of secondMenuItems"
+                        >
+                            {{ item }}
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </p-toolbar>
+    </div>
+</div>
+
+<p-tabView>
+    <p-tabPanel
+        [header]="item"
+        *ngFor="let item of tabItems; let i = index"
+        [selected]="i === tabItems.length - 1"
+        [closable]="true"
+        (onClose)="handleClose($event)"
+        >{{ item }}</p-tabPanel
+    >
+</p-tabView>
