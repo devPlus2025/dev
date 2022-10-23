@@ -9,7 +9,14 @@ export class DataService implements InMemoryDbService {
     constructor() {}
     createDb() {
         return {
-            users: [],
+            menuItem: [
+                {
+                    firstItem: 'ejemplo 1',
+                    secondItem: 'ejemplo 2',
+                    thirdItem: 'ejemplo 3',
+                    forthItem: 'ejemplo 4',
+                },
+            ],
         };
     }
 }

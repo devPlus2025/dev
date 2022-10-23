@@ -38,6 +38,7 @@ import { userModule } from './user/user.module';
 import { UserAuthEffects } from './user/state/user-auth/user-auth.effects';
 import { UserAccountComponent } from './user-orders/user-account/user-account.component';
 import { UserOrdersFormComponent } from './user-orders/user-orders-form/user-orders-form.component';
+import { MenuItemEffect } from './user-orders/state/menuItem.effects';
 
 @NgModule({
     declarations: [
@@ -67,7 +68,7 @@ import { UserOrdersFormComponent } from './user-orders/user-orders-form/user-ord
         ToolbarModule,
         HttpClientInMemoryWebApiModule.forRoot(DataService),
         HttpClientModule,
-        EffectsModule.forRoot([UserAuthEffects]),
+        EffectsModule.forRoot([UserAuthEffects, MenuItemEffect]),
         StoreModule.forRoot(appReducer),
         StoreDevtoolsModule.instrument({
             logOnly: false,
