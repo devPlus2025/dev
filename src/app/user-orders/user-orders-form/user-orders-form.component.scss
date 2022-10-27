@@ -1,0 +1,37 @@
+.form-group {
+    height: 45px;
+    white-space: nowrap;
+    label {
+        margin-bottom: 0rem;
+        font-size: 14px;
+    }
+    input {
+        box-shadow: none;
+        border: none;
+        border-radius: 0px;
+    }
+}
+.form {
+    input {
+        box-shadow: none;
+        border-color: rgb(180, 177, 177);
+        border-radius: 0px;
+    }
+}
+hr.dashed {
+    display: flex;
+    border-top: 1.5px dashed rgb(137, 134, 134);
+    width: 75%;
+    margin-left: 0;
+}
+
+.bg-input-color {
+    background-color: #d5dcda;
+}
+
+.footer {
+    background-color: rgb(65, 64, 64);
+    margin-top: 9px;
+    width: 100%;
+    height: 40px;
+}

@@ -1,0 +1,51 @@
+:host {
+    height: 100px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(rgb(124, 118, 118), rgb(209, 209, 207));
+    background-repeat: no-repeat;
+}
+.p-toolbar-group-left {
+    display: flex;
+    flex-direction: row;
+    margin-left: 150px;
+}
+
+.p-toolbar-group-left p {
+    font-weight: 600;
+    font-size: 17px;
+    padding: 10px;
+    color: rgb(239, 234, 234);
+}
+
+.p-toolbar-group-left a {
+    text-decoration: none;
+}
+
+.p-icons {
+    height: 70px;
+    width: 70px;
+    background: none;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+:host ::ng-deep .tabview-custom {
+    i,
+    span {
+        vertical-align: middle;
+    }
+
+    span {
+        margin: 0 0.5rem;
+    }
+}
+
+:host ::ng-deep .p-tabPanel {
+    p {
+        font-weight: 600;
+        font-size: 17px;
+        padding: 10px;
+        color: rgb(239, 234, 234);
+    }
+}

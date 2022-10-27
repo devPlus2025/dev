@@ -1,0 +1,41 @@
+{
+    "root": true,
+    "parser": "@angular-eslint/template-parser",
+    "ignorePatterns": ["projects/**/*"],
+    "overrides": [
+        {
+            "files": ["*.ts", "*.tsx", "*.html"],
+            "parserOptions": {
+                "project": ["tsconfig.json", "e2e/tsconfig.json"],
+                "createDefaultProgram": true
+            },
+            "extends": ["plugin:@angular-eslint/recommended", "plugin:@angular-eslint/template/process-inline-templates"],
+            "plugins": ["unused-imports"],
+            "rules": {
+                "no-console": 0,
+                "unused-imports/no-unused-imports": 2,// does not working properly it removes unused-import 
+                "@angular-eslint/component-selector": [
+                    "error",
+                    {
+                        "prefix": "app",
+                        "style": "kebab-case",
+                        "type": "element"
+                    }
+                ],
+                "@angular-eslint/directive-selector": [
+                    "error",
+                    {
+                        "prefix": "app",
+                        "style": "camelCase",
+                        "type": "attribute"
+                    }
+                ]
+            }
+        },
+        {
+            "files": ["*.html"],
+            "extends": ["plugin:@angular-eslint/template/recommended"],
+            "rules": {}
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+<div>
+    <div class="header row">
+        <div class="col-sm-1 mt-4">
+            <p>ICON</p>
+        </div>
+        <div class="col-sm-3 form">
+            <input type="email" class="form-control mt-input" aria-describedby="emailHelp" />
+        </div>
+        <div class="col-sm-4 row mt-4">
+            <div class="form-check radio">
+                <input
+                    class="form-check-input"
+                    type="radio"
+                    name="exampleRadios"
+                    id="exampleRadios1"
+                    value="option1"
+                    checked
+                />
+                <label class="form-check-label" for="exampleRadios1"> Default radio </label>
+            </div>
+            <div class="form-check radio">
+                <input
+                    class="form-check-input"
+                    type="radio"
+                    name="exampleRadios"
+                    id="exampleRadios2"
+                    value="option2"
+                />
+                <label class="form-check-label" for="exampleRadios2"> Second default radio </label>
+            </div>
+            <div class="form-check radio">
+                <input
+                    class="form-check-input"
+                    type="radio"
+                    name="exampleRadios"
+                    id="exampleRadios3"
+                    value="option3"
+                />
+                <label class="form-check-label" for="exampleRadios3"> radio </label>
+            </div>
+        </div>
+    </div>
+    <p-panel header="Details Orders" [toggleable]="true">
+        <ng-template pTemplate="icons">
+            <!-- <img src="../../assets/logo/logoci.png" alt="" style="height: 5px" /> -->
+            <button pButton class="p-panel-header-icon p-link" icon="pi pi-bookmark-fill"></button>
+            <button pButton class="p-panel-header-icon p-link" icon="pi pi-filter-fill"></button>
+        </ng-template>
+        <app-user-orders-form></app-user-orders-form>
+    </p-panel>
+</div>
